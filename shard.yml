@@ -1,0 +1,13 @@
+name: morse
+version: 0.1.0
+
+authors:
+  - yidmoussi <youssef@hiddenfounders.com>
+
+targets:
+  morse:
+    main: src/morse.cr
+
+crystal: 0.23.1
+
+license: MIT
