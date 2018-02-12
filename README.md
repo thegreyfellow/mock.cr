@@ -1,18 +1,38 @@
 # morse
 
-TODO: Write a description here
+Morse code encoder/decoder.
 
 ## Installation
 
-TODO: Write installation instructions here
+Add this to your shard.yml:
+
+```
+dependencies:
+  morse:
+    github: thegreyfellow/morse.cr
+    version: "~> 0.1.0"
+
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+to_encode = "hello world, this is me from the past."
+
+encoded_string = Morse.encode(to_encode)
+# => ".... . .−.. .−.. −−− / .−− −−− .−. .−.. −.. −−..−− / − .... .. ... / −.−− −−− ..− ... ... . ..−. / ..−. .−. −−− −− / − .... . / .−−. .− ... − .−.−.−"
+
+to_decode = ".... . .−.. .−.. −−− / .−− −−− .−. .−.. −.. −−..−− / − .... .. ... / −.−− −−− ..− ... ... . ..−. / ..−. .−. −−− −− / − .... . / .−−. .− ... − .−.−.−"
+
+decoded_string = Morse.decode(to_decode)
+# => "hello world, this is me from the past."
+```
 
 ## Development
 
-TODO: Write development instructions here
+- git clone the repo.
+- start hacking around :).
+
 
 ## Contributing
 
@@ -24,4 +44,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [thegreyfellow](https://github.com/thegreyfellow) yidmoussi - creator, maintainer
+- [thegreyfellow](https://github.com/thegreyfellow) - creator, maintainer
