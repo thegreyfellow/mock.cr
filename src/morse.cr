@@ -45,7 +45,3 @@ module Morse
     end.join("")
   end
 end
-
-# example running encode method:
-to_encode = "hello world, this youssef from the past."
-puts Morse.encode(to_encode)
