@@ -6,22 +6,23 @@ Morse code encoder/decoder.
 
 Add this to your shard.yml:
 
-```
+```yml
 dependencies:
   morse:
     github: thegreyfellow/morse.cr
     version: "~> 0.1.0"
-
 ```
 
 ## Usage
 
-```
+```crystal
+# Encoding a string
 to_encode = "hello world, this is me from the past."
 
 encoded_string = Morse.encode(to_encode)
 # => ".... . .−.. .−.. −−− / .−− −−− .−. .−.. −.. −−..−− / − .... .. ... / −.−− −−− ..− ... ... . ..−. / ..−. .−. −−− −− / − .... . / .−−. .− ... − .−.−.−"
 
+# Decoding a string
 to_decode = ".... . .−.. .−.. −−− / .−− −−− .−. .−.. −.. −−..−− / − .... .. ... / −.−− −−− ..− ... ... . ..−. / ..−. .−. −−− −− / − .... . / .−−. .− ... − .−.−.−"
 
 decoded_string = Morse.decode(to_decode)
