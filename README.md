@@ -1,4 +1,4 @@
-# morse
+# morse [![Build Status](https://travis-ci.org/thegreyfellow/morse.cr.svg?branch=master)](https://travis-ci.org/thegreyfellow/morse.cr)
 
 Morse code encoder/decoder.
 
