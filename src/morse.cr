@@ -41,7 +41,7 @@ module Morse
   def decode(text)
     # return unless text
     text.split(" ").map do |char|
-      MORSE_LANGUAGE.key(char)
+      MORSE_LANGUAGE.key_for(char)
     end.join("")
   end
 end
